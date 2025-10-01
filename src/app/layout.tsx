@@ -9,8 +9,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'idev - Senior Software Engineer Portfolio',
-  description: 'Senior Software Engineer specializing in full-stack development, database optimization, and scalable cloud solutions. Transform your business with high-performance applications built using cutting-edge technologies and industry best practices.',
+  title: 'idev',
+  description: 'Transform your business with high-performance applications built using cutting-edge technologies and industry best practices.',
   keywords: [
     'software engineer',
     'full-stack development', 
@@ -24,18 +24,22 @@ export const metadata: Metadata = {
   authors: [{ name: 'Taylor Fonseca Saraiva' }],
   creator: 'Taylor Fonseca Saraiva',
   publisher: 'idev',
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://idev.company',
-    title: 'idev - Senior Software Engineer Portfolio',
-    description: 'Senior Software Engineer specializing in full-stack development, database optimization, and scalable cloud solutions.',
+    url: 'https://www.idevtech.dev',
+    title: 'idev',
+    description: 'Transform your business with high-performance applications built using cutting-edge technologies and industry best practices.',
     siteName: 'idev',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'idev - Senior Software Engineer Portfolio',
-    description: 'Senior Software Engineer specializing in full-stack development, database optimization, and scalable cloud solutions.',
+    title: 'idev',
+    description: 'Transform your business with high-performance applications built using cutting-edge technologies and industry best practices.',
   },
   robots: {
     index: true,
