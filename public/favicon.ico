@@ -1,0 +1,12 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#ef4444" rx="6"/>
+  
+  <!-- Letter 'i' -->
+  <circle cx="10" cy="9" r="2" fill="white"/>
+  <rect x="8.5" y="13" width="3" height="12" fill="white" rx="1.5"/>
+  
+  <!-- Letter 'd' -->
+  <rect x="17" y="7" width="3" height="18" fill="white" rx="1.5"/>
+  <path d="M 17 16 Q 17 13 20 13 Q 23 13 23 16 L 23 20 Q 23 23 20 23 Q 17 23 17 20 Z" fill="white"/>
+</svg>
