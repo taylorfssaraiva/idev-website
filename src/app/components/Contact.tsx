@@ -18,8 +18,8 @@ const Contact = () => {
 
   const contactInfo: ContactInfo = {
     email: 'contact@idevtech.dev',
-    phone: '+1 (407) 972-5547',
-    location: 'Remote',
+    phone: '',
+    location: 'Anywhere',
     social: {
       github: 'https://github.com/taylorfssaraiva',
       linkedin: 'https://linkedin.com/in/taylorfonseca',
@@ -168,20 +168,20 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-center space-x-4 p-4 rounded-lg bg-gray-800/50 border border-gray-700/50 hover:border-coral/20 transition-colors duration-300">
-                <div className="p-2 rounded-lg bg-coral/10">
-                  <Phone size={24} className="text-coral" />
-                </div>
-                <div>
-                  <p className="text-gray-400 text-sm">Phone</p>
-                  <a 
-                    href={`tel:${contactInfo.phone}`}
-                    className="text-white hover:text-coral transition-colors duration-200"
-                  >
-                    {contactInfo.phone}
-                  </a>
-                </div>
-              </div>
+              {/*<div className="flex items-center space-x-4 p-4 rounded-lg bg-gray-800/50 border border-gray-700/50 hover:border-coral/20 transition-colors duration-300">*/}
+              {/*  <div className="p-2 rounded-lg bg-coral/10">*/}
+              {/*    <Phone size={24} className="text-coral" />*/}
+              {/*  </div>*/}
+              {/*  <div>*/}
+              {/*    <p className="text-gray-400 text-sm">Phone</p>*/}
+              {/*    <a */}
+              {/*      href={`tel:${contactInfo.phone}`}*/}
+              {/*      className="text-white hover:text-coral transition-colors duration-200"*/}
+              {/*    >*/}
+              {/*      {contactInfo.phone}*/}
+              {/*    </a>*/}
+              {/*  </div>*/}
+              {/*</div>*/}
 
               <div className="flex items-center space-x-4 p-4 rounded-lg bg-gray-800/50 border border-gray-700/50 hover:border-coral/20 transition-colors duration-300">
                 <div className="p-2 rounded-lg bg-coral/10">
