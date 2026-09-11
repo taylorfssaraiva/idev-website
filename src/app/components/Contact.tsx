@@ -145,8 +145,8 @@ const Contact = () => {
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-semibold text-white mb-6">Let's Connect</h3>
               <p className="text-gray-300 leading-relaxed font-light mb-8">
-                I'm always interested in discussing new opportunities, innovative projects, 
-                and ways to help businesses leverage technology for growth. Reach out through 
+                We're always interested in discussing new opportunities, innovative projects,
+                and ways to help businesses leverage technology for growth. Reach out through
                 any of the channels below.
               </p>
             </motion.div>

@@ -12,6 +12,7 @@ interface Service {
     highlights: string[]
     caseStudy?: string
     results?: string[]
+    verified?: boolean
 }
 
 const Services = () => {
@@ -53,8 +54,8 @@ const Services = () => {
                 'AI-powered automation and chatbots',
                 'Computer vision and image recognition'
             ],
-            caseStudy: 'Built AI-powered customer support system reducing response time by 70%',
-            results: ['70% faster response time', '90% customer satisfaction', '40% cost reduction']
+            caseStudy: 'A typical engagement: building an AI-powered support or automation tool that cuts manual handling time and gives your team a searchable knowledge layer over existing data.',
+            verified: false
         },
         {
             title: 'Full-Stack Development',
@@ -68,8 +69,9 @@ const Services = () => {
                 'API design and integration',
                 'Legacy system modernization'
             ],
-            caseStudy: 'Architected AdTech platform processing 10M+ daily transactions',
-            results: ['99.9% uptime', '10M+ daily requests', '<100ms latency']
+            caseStudy: 'Architected an AdTech platform processing 10M+ daily transactions',
+            results: ['99.9% uptime', '10M+ daily requests', '<100ms latency'],
+            verified: true
         },
         {
             title: 'Frontend & UI/UX Engineering',
@@ -83,8 +85,8 @@ const Services = () => {
                 'Accessibility compliance (WCAG 2.1)',
                 'Design system implementation'
             ],
-            caseStudy: 'Redesigned e-commerce platform increasing conversion by 45%',
-            results: ['45% conversion increase', '60% faster load time', '95+ Lighthouse score']
+            caseStudy: 'A typical engagement: rebuilding a slow or dated interface into a fast, accessible, conversion-focused frontend backed by a real design system.',
+            verified: false
         },
         {
             title: 'Backend & Database Architecture',
@@ -98,8 +100,9 @@ const Services = () => {
                 'Data migration and ETL pipelines',
                 'Security and compliance (SOC 2, GDPR)'
             ],
-            caseStudy: 'Optimized payment processing system for Mastercard operations',
-            results: ['50% faster queries', '99.99% reliability', 'Zero data breaches']
+            caseStudy: 'Optimized payment processing system for a global fintech platform',
+            results: ['50% faster queries', '99.99% reliability', 'Zero data breaches'],
+            verified: true
         },
         {
             title: 'Cloud Infrastructure & DevOps',
@@ -114,7 +117,8 @@ const Services = () => {
                 'Monitoring and observability'
             ],
             caseStudy: 'Migrated enterprise infrastructure to cloud, reducing costs by 60%',
-            results: ['60% cost reduction', '10x faster deployments', '99.95% availability']
+            results: ['60% cost reduction', '10x faster deployments', '99.95% availability'],
+            verified: true
         },
         {
             title: 'Digital Transformation Consulting',
@@ -128,8 +132,8 @@ const Services = () => {
                 'Technical debt assessment',
                 'Roadmap and implementation planning'
             ],
-            caseStudy: 'Led digital transformation for Fortune 500 financial services firm',
-            results: ['3x development velocity', '80% technical debt reduction', '12 engineers trained']
+            caseStudy: 'A typical engagement: auditing a team\'s stack and process, then delivering a prioritized roadmap to cut technical debt and increase development velocity.',
+            verified: false
         }
     ]
 
@@ -191,7 +195,7 @@ const Services = () => {
                         Services That <span className="text-red-500">Drive Results</span>
                     </h2>
                     <p className="text-xl text-slate-400 max-w-3xl mx-auto font-light leading-relaxed">
-                        From AI-powered automation to cloud infrastructure, I deliver comprehensive solutions
+                        From AI-powered automation to cloud infrastructure, we deliver comprehensive solutions
                         that transform businesses and accelerate growth.
                     </p>
                 </motion.div>
@@ -346,7 +350,7 @@ const Services = () => {
                         <div className="space-y-6">
                             <div className="bg-slate-900/50 border border-slate-700/50 rounded-xl p-6">
                                 <h4 className="text-sm font-semibold text-red-400 uppercase tracking-wider mb-3">
-                                    Case Study
+                                    {services[selectedService].verified ? 'Case Study' : 'Example Engagement'}
                                 </h4>
                                 <p className="text-slate-300 leading-relaxed mb-4">
                                     {services[selectedService].caseStudy}
@@ -394,7 +398,7 @@ const Services = () => {
                     className="mt-16 text-center"
                 >
                     <p className="text-slate-400 text-lg mb-6">
-                        Don't see what you're looking for? I offer custom solutions tailored to your unique needs.
+                        Don't see what you're looking for? We offer custom solutions tailored to your unique needs.
                     </p>
                     <button className="inline-flex items-center gap-2 bg-slate-800/50 hover:bg-slate-800 border border-slate-700/50 hover:border-red-500/30 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300" onClick={scrollToContact}>
                         Discuss Custom Solution

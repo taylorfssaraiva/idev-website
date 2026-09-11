@@ -10,7 +10,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-    title: 'idev',
+    title: 'idev — Backend & Cloud Engineering Consultancy',
     description: 'Transform your business with high-performance applications built using cutting-edge technologies and industry best practices.',
     keywords: [
         'software engineer',
@@ -33,13 +33,13 @@ export const metadata: Metadata = {
         type: 'website',
         locale: 'en_US',
         url: 'https://www.idevtech.dev',
-        title: 'idev',
+        title: 'idev — Backend & Cloud Engineering Consultancy',
         description: 'Transform your business with high-performance applications built using cutting-edge technologies and industry best practices.',
         siteName: 'idev',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'idev',
+        title: 'idev — Backend & Cloud Engineering Consultancy',
         description: 'Transform your business with high-performance applications built using cutting-edge technologies and industry best practices.',
     },
     robots: {
@@ -52,9 +52,6 @@ export const metadata: Metadata = {
             'max-image-preview': 'large',
             'max-snippet': -1,
         },
-    },
-    verification: {
-        google: 'google-verification-code',
     },
 }
 

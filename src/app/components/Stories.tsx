@@ -15,6 +15,7 @@ interface SuccessStory {
     }[]
     technologies: string[]
     highlights: string[]
+    verified?: boolean
 }
 
 const SuccessStories = () => {
@@ -37,7 +38,8 @@ const SuccessStories = () => {
                 'Real-time data processing pipelines',
                 'Advanced audience segmentation',
                 'Cross-device identity matching'
-            ]
+            ],
+            verified: true
         },
         {
             industry: 'Financial Services',
@@ -55,7 +57,8 @@ const SuccessStories = () => {
                 'Real-time fraud detection',
                 'Zero-downtime deployments',
                 'Global transaction processing'
-            ]
+            ],
+            verified: true
         },
         {
             industry: 'Data Analytics',
@@ -73,25 +76,22 @@ const SuccessStories = () => {
                 'Interactive visualization dashboards',
                 'Sub-second query performance',
                 'Automated compliance reporting'
-            ]
+            ],
+            verified: true
         },
         {
             industry: 'AI & Machine Learning',
             title: 'Intelligent Automation Platform',
-            description: 'Architected full-stack AI-powered automation platform with multiple ML models, semantic search capabilities, and real-time processing for enterprise workflow optimization.',
-            results: [
-                { metric: 'Time to Market', value: '3 months', icon: 'clock' },
-                { metric: 'User Growth', value: '400%', icon: 'trending' },
-                { metric: 'AI Accuracy', value: '92%', icon: 'target' },
-                { metric: 'Automation', value: '70%', icon: 'award' }
-            ],
+            description: 'An example of the kind of AI-powered automation platform we build: multiple ML models, semantic search, and real-time processing designed for enterprise workflow optimization.',
+            results: [],
             technologies: ['Next.js', 'Python', 'LangChain', 'OpenAI', 'Pinecone', 'AWS Lambda'],
             highlights: [
                 'LangChain AI orchestration',
                 'Vector database integration',
                 'Real-time WebSocket communication',
                 'Scalable serverless architecture'
-            ]
+            ],
+            verified: false
         }
     ]
 
@@ -159,7 +159,7 @@ const SuccessStories = () => {
                             }
               `}
                         >
-                            <div className="text-sm mb-1 opacity-80">Case Study {index + 1}</div>
+                            <div className="text-sm mb-1 opacity-80">{story.verified ? `Case Study ${index + 1}` : 'Example'}</div>
                             <div className="font-semibold">{story.industry}</div>
                         </button>
                     ))}
@@ -200,6 +200,7 @@ const SuccessStories = () => {
                     </div>
 
                     {/* Results Grid */}
+                    {stories[activeStory].results.length > 0 && (
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                         {stories[activeStory].results.map((result, idx) => (
                             <motion.div
@@ -217,6 +218,7 @@ const SuccessStories = () => {
                             </motion.div>
                         ))}
                     </div>
+                    )}
 
                     {/* Technologies */}
                     <div className="bg-slate-800/30 border border-slate-700/50 rounded-xl p-6">

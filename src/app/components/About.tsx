@@ -44,10 +44,10 @@ const About = () => {
     ]
 
     const achievements = [
-        { icon: Code2, value: '100+', label: 'Projects Delivered' },
-        { icon: Globe, value: 'Global', label: 'Client Reach' },
-        { icon: TrendingUp, value: '99.9%', label: 'Client Satisfaction' },
-        { icon: Users, value: '10+', label: 'Years in Business' }
+        { icon: Code2, value: '10+', label: 'Years of Engineering Experience' },
+        { icon: Globe, value: 'Remote', label: 'Client Engagements' },
+        { icon: TrendingUp, value: '3', label: 'Industries Served' },
+        { icon: Users, value: '2024', label: 'Founded' }
     ]
 
     const expertise = [
@@ -166,8 +166,8 @@ const About = () => {
                             </p>
                             <p className="text-slate-300 leading-relaxed">
                                 From AdTech platforms processing millions of daily requests to secure payment systems
-                                handling global transactions, our work powers critical business operations for leading
-                                companies worldwide.
+                                handling global transactions, our team's work has powered critical business operations
+                                for companies in adtech, financial services, and data analytics.
                             </p>
                         </div>
                         <div>
